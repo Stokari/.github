@@ -22,7 +22,7 @@ Walk through a market like Merkato and you'll find most stock tracked in noteboo
 
 The apps that could fix this usually assume steady internet, a bigger budget, or a lot of training. Stokari is built around the opposite: a shop with a cheap Android phone, a patchy connection, and an owner who has never used inventory software.
 
-> 🚧 **Early development.** The requirements (SRS v0.3) and system design (SDD v0.1) are written. Most of the code is not. Don't point a real shop at this yet.
+> 🚧 **Early development.** The requirements (SRS v0.5) and system design (SDD v0.2) are written. Most of the code is not. Don't point a real shop at this yet.
 
 ## 📱 What you'll be able to do
 
