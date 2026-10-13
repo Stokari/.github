@@ -53,7 +53,7 @@ A sale that happened at the counter shouldn't disappear because another phone re
 |---|---|
 | 💻 Web app | Vite, React, TypeScript, Dexie (IndexedDB), TanStack Query |
 | ⚙️ API | NestJS, Prisma, PostgreSQL |
-| 🔐 Sign-in | Google (OpenID Connect) |
+| 🔐 Auth | Google (OpenID Connect) |
 | ☁️ Hosting | Vercel, Render, Neon (free tiers) |
 
 ## 🗂️ Repositories
