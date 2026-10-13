@@ -2,7 +2,6 @@
 <p align="center">
   <img src="https://placehold.co/160x160/png?text=Stokari+logo" alt="Stokari logo" width="140" height="140" />
 </p>
-which backend framework do you think is the ebst for this proejct 
 <h1 align="center">📦 Stokari</h1>
 
 <p align="center">
