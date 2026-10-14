@@ -4,7 +4,7 @@
 
 <h1 align="center">📦 Stokari</h1>
 
-<b align="center">Keep track of your shop's stock and sales, even when the internet isn't there.</b>
+<b> <p align="center">Keep track of your shop's stock and sales, even when the internet isn't there.</p></b>
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-early%20development-orange" alt="Early development" />
