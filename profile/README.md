@@ -1,10 +1,10 @@
-# 📦 Stokari
-
-**Keep track of your shop's stock and sales, even when the internet isn't there.**
-
 <p align="center">
   <img src="https://placehold.co/160x160/png?text=Stokari+logo" alt="Stokari logo" width="140" height="140" />
 </p>
+
+<h1 align="center">📦 Stokari</h1>
+
+**Keep track of your shop's stock and sales, even when the internet isn't there.**
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-early%20development-orange" alt="Early development" />
