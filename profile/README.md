@@ -2,15 +2,15 @@
 
 **Keep track of your shop's stock and sales, even when the internet isn't there.**
 
-\<p align="center">
-&#x20; \<img src="[https://placehold.co/160x160/png?text=Stokari+logo](https://placehold.co/160x160/png?text=Stokari+logo)" alt="Stokari logo" width="140" height="140" />
-\</p>
+<p align="center">
+  <img src="https://placehold.co/160x160/png?text=Stokari+logo" alt="Stokari logo" width="140" height="140" />
+</p>
 
-\<p align="center">
-&#x20; \<img src="[https://img.shields.io/badge/status-early%20development-orange](https://img.shields.io/badge/status-early%20development-orange)" alt="Early development" />
-&#x20; \<img src="[https://img.shields.io/badge/approach-offline--first-blue](https://img.shields.io/badge/approach-offline--first-blue)" alt="Offline first" />
-&#x20; \<img src="[https://img.shields.io/badge/app-installable%20PWA-purple](https://img.shields.io/badge/app-installable%20PWA-purple)" alt="Installable PWA" />
-\</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/status-early%20development-orange" alt="Early development" />
+  <img src="https://img.shields.io/badge/approach-offline--first-blue" alt="Offline first" />
+  <img src="https://img.shields.io/badge/app-installable%20PWA-purple" alt="Installable PWA" />
+</p>
 
 ## Why Stokari?
 
