@@ -148,19 +148,6 @@ The project is organized into separate repositories for the web application and 
 
 *The repository URLs above assume the GitHub organization is named `Stokari`. Update them if the actual repository names differ.*
 
-## Development Plan
-
-The initial development plan spans four weeks.
-
-| Week | Focus |
-|---|---|
-| Week 1 | Project setup, authentication foundation, database models, and core product management |
-| Week 2 | Sales, stock movements, and inventory business rules |
-| Week 3 | Offline workflows, synchronization, and conflict handling |
-| Week 4 | Testing, integration, usability improvements, and deployment preparation |
-
-The schedule is a target for the initial MVP, not a guarantee that every planned feature will be complete by the end of the fourth week.
-
 ## Contributing
 
 Stokari is currently in early development. If you're interested in contributing, start by exploring the project repositories and reviewing the requirements and design documents.
