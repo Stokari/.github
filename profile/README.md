@@ -7,7 +7,7 @@
 <b><p align="center">Keep track of your shop's stock and sales, even when the internet isn't there.</p></b>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-early%20development-orange" alt="Early development" />
+  <img src="https://img.shields.io/badge/status-development-orange" alt="Early development" />
   <img src="https://img.shields.io/badge/approach-offline--first-blue" alt="Offline first" />
   <img src="https://img.shields.io/badge/app-installable%20PWA-purple" alt="Installable PWA" />
 </p>
