@@ -18,7 +18,8 @@
 
 Stokari is an offline-first inventory and sales management application designed for small retailers. It aims to simplify everyday stock management, sales recording, and inventory tracking, even when internet connectivity is unreliable.
 
-**Main Repository:** [Stokari GitHub Repository](MAIN_REPOSITORY_LINK_PLACEHOLDER)
+**Web Repository:** [Stokari Web Repository](https://github.com/Stokari/web)
+**Backend Repository** [Stokari Backend Repository](https://github.com/Stokari/backend)
 
 ## Project Demonstration
 
