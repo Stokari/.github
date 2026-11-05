@@ -50,8 +50,6 @@ Now imagine you have an affordable Android phone, an unreliable internet connect
 
 Stokari is an offline-first inventory and sales management application designed for small retailers. It aims to make everyday stock management simpler, even with unreliable connectivity.
 
-> **Project status:** Stokari is in early development. The Software Requirements Specification (SRS v0.5) and Software Design Document (SDD v0.2) have been prepared, but most of the application code has not yet been written. Features described here are planned, not necessarily implemented.
-
 ## What We're Building
 
 - **Record sales anywhere:** Record sales even when the internet is unavailable and synchronize them when connectivity returns.
