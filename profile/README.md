@@ -1,16 +1,43 @@
-<p align="center">
+ <p align="center">
   <img src="https://placehold.co/160x160/png?text=Stokari+logo" alt="Stokari logo" width="140" height="140" />
 </p>
 
 <h1 align="center">📦 Stokari</h1>
 
-<b> <p align="center">Keep track of your shop's stock and sales, even when the internet isn't there.</p></b>
+<b><p align="center">Keep track of your shop's stock and sales, even when the internet isn't there.</p></b>
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-early%20development-orange" alt="Early development" />
   <img src="https://img.shields.io/badge/approach-offline--first-blue" alt="Offline first" />
   <img src="https://img.shields.io/badge/app-installable%20PWA-purple" alt="Installable PWA" />
 </p>
+
+---
+
+## Project Overview
+
+Stokari is an offline-first inventory and sales management application designed for small retailers. It aims to simplify everyday stock management, sales recording, and inventory tracking, even when internet connectivity is unreliable.
+
+**Main Repository:** [Stokari GitHub Repository](MAIN_REPOSITORY_LINK_PLACEHOLDER)
+
+## Project Demonstration
+
+**Video Presentation:** [Watch the 5-minute project demonstration](VIDEO_LINK_PLACEHOLDER)
+
+The video presentation will demonstrate the project's purpose, key features, and how the system works, including its offline-first approach and synchronization process.
+
+*The video will be added once it is available. The presentation must include a voice-over.*
+
+## Team Members
+
+| CTC ID | Full Name | GitHub Profile |
+|---|---|---|
+| CTC-2035-26 | Abel Mekonen | [@bella-247](https://github.com/bella-247) |
+| CTC-3809-26 | Sosina Girmay | [@sosina47](https://github.com/sosina47) |
+| CTC-3099-26 | Migbaru Belay | [@migbar0696](https://github.com/migbar0696) |
+| CTC-3561-26 | Amanuel Habtamu | [@AmanuelHab](https://github.com/AmanuelHab) |
+
+---
 
 ## Why Stokari?
 
@@ -39,9 +66,9 @@ Suppose a shop has 10 units of a product. Two devices go offline and sell some o
 
 Stokari is designed to preserve both sales and flag the resulting discrepancy for the owner to review.
 
-| Scenario                                   | Intended behavior                                                                                      |
-| ------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| Starting stock: 10; offline sales: 2 and 3 | Both sales are synchronized; 5 units remain.                                                           |
+| Scenario | Intended behavior |
+|---|---|
+| Starting stock: 10; offline sales: 2 and 3 | Both sales are synchronized; 5 units remain. |
 | Starting stock: 10; offline sales: 7 and 6 | Both sales are preserved and flagged for review because the combined sales exceed the available stock. |
 
 The owner can then resolve the discrepancy, for example by cancelling an erroneous sale or correcting the stock count. Stock changes should be recorded rather than silently rewriting or deleting transaction history.
@@ -50,16 +77,16 @@ The owner can then resolve the discrepancy, for example by cancelling an erroneo
 
 ## Built With
 
-| Component                                 | Technology                                                                 |
-| ----------------------------------------- | -------------------------------------------------------------------------- |
-| Web application                           | React, TypeScript, Vite                                                    |
-| Local storage                             | IndexedDB, Dexie                                                           |
-| Data fetching and server-state management | TanStack Query                                                             |
-| Backend API                               | Python, Django, Django REST Framework                                      |
-| Database                                  | PostgreSQL                                                                 |
-| Authentication                            | Google Sign-In using OpenID Connect (planned)                              |
-| Offline support                           | Progressive Web App (PWA), Service Worker, IndexedDB, transactional outbox |
-| Deployment                                | To be finalized                                                            |
+| Component | Technology |
+|---|---|
+| Web application | React, TypeScript, Vite |
+| Local storage | IndexedDB, Dexie |
+| Data fetching and server-state management | TanStack Query |
+| Backend API | Python, Django, Django REST Framework |
+| Database | PostgreSQL |
+| Authentication | Google Sign-In using OpenID Connect (planned) |
+| Offline support | Progressive Web App (PWA), Service Worker, IndexedDB, transactional outbox |
+| Deployment | To be finalized |
 
 ### Architecture Overview
 
@@ -75,27 +102,63 @@ Stokari is planned as an offline-first Progressive Web App (PWA).
 
 The offline synchronization design is intended to use a transactional outbox, stable operation IDs, and idempotent server processing to reduce duplicate operations and preserve transactions across retries.
 
+### High-Level Architecture
+
+```text
+                   USER
+                     |
+                     v
+           React + TypeScript PWA
+                     |
+                     v
+              Local Storage
+              (IndexedDB)
+                     |
+                     v
+             Offline Operations
+                     |
+                     v
+            Transactional Outbox
+                     |
+                     v
+            Network Available?
+                /       \
+              NO         YES
+              |           |
+              v           v
+         Keep Local   Synchronize
+          Changes     Operations
+                          |
+                          v
+                   Django REST API
+                          |
+                          v
+                     PostgreSQL
+```
+
+*This diagram represents the intended architecture, not a completed implementation.*
+
 ## Project Structure
 
 The project is organized into separate repositories for the web application and backend API.
 
-| Repository                                       | Description               |
-| ------------------------------------------------ | ------------------------- |
-| [`web`](https://github.com/ORG_NAME/web)         | React PWA frontend        |
-| [`backend`](https://github.com/ORG_NAME/backend) | Django REST Framework API |
+| Repository | Description |
+|---|---|
+| [`web`](https://github.com/Stokari/web) | React PWA frontend |
+| [`backend`](https://github.com/Stokari/backend) | Django REST Framework API |
 
-Replace `ORG_NAME` with the actual GitHub organization name if these repository URLs differ.
+*The repository URLs above assume the GitHub organization is named `Stokari`. Update them if the actual repository names differ.*
 
 ## Development Plan
 
 The initial development plan spans four weeks.
 
-| Week   | Focus                                                                                  |
-| ------ | -------------------------------------------------------------------------------------- |
+| Week | Focus |
+|---|---|
 | Week 1 | Project setup, authentication foundation, database models, and core product management |
-| Week 2 | Sales, stock movements, and inventory business rules                                   |
-| Week 3 | Offline workflows, synchronization, and conflict handling                              |
-| Week 4 | Testing, integration, usability improvements, and deployment preparation               |
+| Week 2 | Sales, stock movements, and inventory business rules |
+| Week 3 | Offline workflows, synchronization, and conflict handling |
+| Week 4 | Testing, integration, usability improvements, and deployment preparation |
 
 The schedule is a target for the initial MVP, not a guarantee that every planned feature will be complete by the end of the fourth week.
 
